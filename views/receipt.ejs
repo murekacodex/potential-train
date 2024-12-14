@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonsoon Cinemax</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-cyan-100 flex items-center justify-center min-h-screen">
+    <div class="bg-blue-100 shadow-md rounded-lg p-8 w-full max-w-lg">
+        <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">Booking Receipt</h1>
+
+        <div class="space-y-4">
+            <p class="text-lg"><strong class="text-gray-700">Name:</strong> <span class="text-gray-800">
+                    <%= name %>
+                </span></p>
+
+            <p class="text-lg"><strong class="text-gray-700">Email:</strong> <span class="text-gray-800">
+                    <%= email %>
+                </span></p>
+
+            <p class="text-lg"><strong class="text-gray-700">Phone:</strong> <span class="text-gray-800">
+                    <%= phone %>
+                </span></p>
+
+            <p class="text-lg"><strong class="text-gray-700">Credit Card:</strong> <span class="text-gray-800">
+                    <%= creditCard %>
+                </span></p>
+
+            <p class="text-lg"><strong class="text-gray-700">Movie:</strong> <span class="text-gray-800">
+                    <%= movie %>
+                </span></p>
+
+            <p class="text-lg"><strong class="text-gray-700">Showtime:</strong> <span class="text-gray-800">
+                    <%= showtime %>
+                </span></p>
+
+            <p class="text-lg"><strong class="text-gray-700">Seats:</strong> <span class="text-gray-800">
+                    <%= seats %>
+                </span></p>
+
+            <p class="text-lg"><strong class="text-gray-700">Service Charge:</strong> <span class="text-gray-800">$<%=
+                        serviceCharge %></span></p>
+
+            <p class="text-lg"><strong class="text-gray-700">Total Cost:</strong> <span
+                    class="text-green-600 font-semibold">$<%= total %></span></p>
+        </div>
+        <div class="mt-6 text-center">
+            <a href="/"
+                class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded transition duration-200">
+                Home
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
